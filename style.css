@@ -25,9 +25,11 @@ html {
 body {
   background-image: url(assets/bg.jpg);
   background-size: cover;
+
+  width: 100%;
 }
 
-#page{
+#page {
   width: 800px;
   padding: 24px;
   background-color: var(--surface-color);
@@ -43,11 +45,11 @@ main {
   padding: 24px;
 }
 
-section + section {
+section+section {
   margin-top: 24px;
 }
 
-#about p + p {
+#about p+p {
   margin-top: 12px;
 }
 
@@ -59,7 +61,8 @@ h2 {
   font-size: 24px;
 }
 
-h1, h2 {
+h1,
+h2 {
   color: var(--text-color-primary);
   margin-bottom: 4px;
   line-height: 150%;
@@ -79,7 +82,66 @@ footer img {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 1024px) {
+  img {
+    width: 600px;
+  }
 
+  #page {
+    width: 650px;
+  }
 
+  footer img {
+    width: inherit;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 210px;
+  }
 
+  #page {
+    width: 426px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  footer img {
+    vertical-align: middle;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  img {
+    display: block;
+    margin: 0 auto;
+    width: 210px;
+  }
+
+  #page {
+    width: 260px;
+  }
+
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  footer img {
+    width: inherit;
+  }
+}
