@@ -1,0 +1,11 @@
+{
+  "amazonQ.suppressPrompts": {
+    "createCredentialsProfile": false,
+    "codeWhispererNewWelcomeMessage": false,
+    "codeWhispererConnectionExpired": false,
+    "amazonQWelcomePage": false,
+    "amazonQSessionConfigurationMessage": false,
+    "minIdeVersion": false,
+    "ssoCacheError": false
+  }
+}
